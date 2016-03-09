@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D933FED21C8E05D50012AB01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FED11C8E05D50012AB01 /* AppDelegate.swift */; };
-		D933FED41C8E05D50012AB01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FED31C8E05D50012AB01 /* ViewController.swift */; };
 		D933FED71C8E05D50012AB01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D933FED51C8E05D50012AB01 /* Main.storyboard */; };
 		D933FEDA1C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D933FED81C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld */; };
 		D933FEDC1C8E05D50012AB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D933FEDB1C8E05D50012AB01 /* Assets.xcassets */; };
 		D933FEDF1C8E05D50012AB01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D933FEDD1C8E05D50012AB01 /* LaunchScreen.storyboard */; };
 		D933FEEA1C8E05D50012AB01 /* iOS_tableView_sync_starterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FEE91C8E05D50012AB01 /* iOS_tableView_sync_starterTests.swift */; };
 		D933FEF51C8E05D50012AB01 /* iOS_tableView_sync_starterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FEF41C8E05D50012AB01 /* iOS_tableView_sync_starterUITests.swift */; };
+		D933FF061C909E940012AB01 /* SyncTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FF051C909E940012AB01 /* SyncTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		D933FECE1C8E05D50012AB01 /* iOS-tableView-sync-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-tableView-sync-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D933FED11C8E05D50012AB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D933FED31C8E05D50012AB01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D933FED61C8E05D50012AB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D933FED91C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_tableView_sync_starter.xcdatamodel; sourceTree = "<group>"; };
 		D933FEDB1C8E05D50012AB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		D933FEF01C8E05D50012AB01 /* iOS-tableView-sync-starterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-tableView-sync-starterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D933FEF41C8E05D50012AB01 /* iOS_tableView_sync_starterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_tableView_sync_starterUITests.swift; sourceTree = "<group>"; };
 		D933FEF61C8E05D50012AB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D933FF051C909E940012AB01 /* SyncTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,9 @@
 		D933FED01C8E05D50012AB01 /* iOS-tableView-sync-starter */ = {
 			isa = PBXGroup;
 			children = (
-				D933FED11C8E05D50012AB01 /* AppDelegate.swift */,
-				D933FED31C8E05D50012AB01 /* ViewController.swift */,
+				D933FF041C909D800012AB01 /* Support */,
 				D933FED51C8E05D50012AB01 /* Main.storyboard */,
-				D933FEDB1C8E05D50012AB01 /* Assets.xcassets */,
-				D933FEDD1C8E05D50012AB01 /* LaunchScreen.storyboard */,
-				D933FEE01C8E05D50012AB01 /* Info.plist */,
-				D933FED81C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld */,
+				D933FF051C909E940012AB01 /* SyncTableViewController.swift */,
 			);
 			path = "iOS-tableView-sync-starter";
 			sourceTree = "<group>";
@@ -126,6 +122,18 @@
 				D933FEF61C8E05D50012AB01 /* Info.plist */,
 			);
 			path = "iOS-tableView-sync-starterUITests";
+			sourceTree = "<group>";
+		};
+		D933FF041C909D800012AB01 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D933FED11C8E05D50012AB01 /* AppDelegate.swift */,
+				D933FEDB1C8E05D50012AB01 /* Assets.xcassets */,
+				D933FEDD1C8E05D50012AB01 /* LaunchScreen.storyboard */,
+				D933FEE01C8E05D50012AB01 /* Info.plist */,
+				D933FED81C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D933FED41C8E05D50012AB01 /* ViewController.swift in Sources */,
+				D933FF061C909E940012AB01 /* SyncTableViewController.swift in Sources */,
 				D933FED21C8E05D50012AB01 /* AppDelegate.swift in Sources */,
 				D933FEDA1C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld in Sources */,
 			);
@@ -488,6 +496,7 @@
 				D933FEFB1C8E05D50012AB01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D933FEFC1C8E05D50012AB01 /* Build configuration list for PBXNativeTarget "iOS-tableView-sync-starterTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				D933FEFE1C8E05D50012AB01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D933FEFF1C8E05D50012AB01 /* Build configuration list for PBXNativeTarget "iOS-tableView-sync-starterUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				D933FF011C8E05D50012AB01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
