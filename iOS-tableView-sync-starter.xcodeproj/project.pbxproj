@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EFEB929EB9A5D7E3C7F57A0 /* SyncTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFEBABBBE06241A9AB6E251 /* SyncTableViewController.swift */; };
 		D933FED21C8E05D50012AB01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FED11C8E05D50012AB01 /* AppDelegate.swift */; };
 		D933FED71C8E05D50012AB01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D933FED51C8E05D50012AB01 /* Main.storyboard */; };
 		D933FEDA1C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D933FED81C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld */; };
@@ -14,7 +15,8 @@
 		D933FEDF1C8E05D50012AB01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D933FEDD1C8E05D50012AB01 /* LaunchScreen.storyboard */; };
 		D933FEEA1C8E05D50012AB01 /* iOS_tableView_sync_starterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FEE91C8E05D50012AB01 /* iOS_tableView_sync_starterTests.swift */; };
 		D933FEF51C8E05D50012AB01 /* iOS_tableView_sync_starterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FEF41C8E05D50012AB01 /* iOS_tableView_sync_starterUITests.swift */; };
-		D933FF061C909E940012AB01 /* SyncTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FF051C909E940012AB01 /* SyncTableViewController.swift */; };
+		D933FF111C933D3C0012AB01 /* SyncTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933FF0F1C933D3C0012AB01 /* SyncTableViewCell.swift */; };
+		D933FF121C933D3C0012AB01 /* SyncTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D933FF101C933D3C0012AB01 /* SyncTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EFEBABBBE06241A9AB6E251 /* SyncTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncTableViewController.swift; sourceTree = "<group>"; };
 		D933FECE1C8E05D50012AB01 /* iOS-tableView-sync-starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-tableView-sync-starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D933FED11C8E05D50012AB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D933FED61C8E05D50012AB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +51,8 @@
 		D933FEF01C8E05D50012AB01 /* iOS-tableView-sync-starterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-tableView-sync-starterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D933FEF41C8E05D50012AB01 /* iOS_tableView_sync_starterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_tableView_sync_starterUITests.swift; sourceTree = "<group>"; };
 		D933FEF61C8E05D50012AB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D933FF051C909E940012AB01 /* SyncTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncTableViewController.swift; sourceTree = "<group>"; };
+		D933FF0F1C933D3C0012AB01 /* SyncTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncTableViewCell.swift; sourceTree = "<group>"; };
+		D933FF101C933D3C0012AB01 /* SyncTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SyncTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		D933FED01C8E05D50012AB01 /* iOS-tableView-sync-starter */ = {
 			isa = PBXGroup;
 			children = (
+				D933FF0A1C933A9B0012AB01 /* Controller */,
+				D933FF091C933A290012AB01 /* View */,
 				D933FF041C909D800012AB01 /* Support */,
 				D933FED51C8E05D50012AB01 /* Main.storyboard */,
-				D933FF051C909E940012AB01 /* SyncTableViewController.swift */,
 			);
 			path = "iOS-tableView-sync-starter";
 			sourceTree = "<group>";
@@ -134,6 +139,31 @@
 				D933FED81C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		D933FF091C933A290012AB01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D933FF131C9340BA0012AB01 /* Sample */,
+				D933FF0F1C933D3C0012AB01 /* SyncTableViewCell.swift */,
+				D933FF101C933D3C0012AB01 /* SyncTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D933FF0A1C933A9B0012AB01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2EFEBABBBE06241A9AB6E251 /* SyncTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D933FF131C9340BA0012AB01 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +272,7 @@
 			files = (
 				D933FEDF1C8E05D50012AB01 /* LaunchScreen.storyboard in Resources */,
 				D933FEDC1C8E05D50012AB01 /* Assets.xcassets in Resources */,
+				D933FF121C933D3C0012AB01 /* SyncTableViewCell.xib in Resources */,
 				D933FED71C8E05D50012AB01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D933FF061C909E940012AB01 /* SyncTableViewController.swift in Sources */,
 				D933FED21C8E05D50012AB01 /* AppDelegate.swift in Sources */,
 				D933FEDA1C8E05D50012AB01 /* iOS_tableView_sync_starter.xcdatamodeld in Sources */,
+				D933FF111C933D3C0012AB01 /* SyncTableViewCell.swift in Sources */,
+				2EFEB929EB9A5D7E3C7F57A0 /* SyncTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
